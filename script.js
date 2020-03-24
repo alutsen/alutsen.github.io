@@ -123,7 +123,7 @@ function Transcribe(){
         if (t[i].lon) transcript += ":";
         if (t[i].pal) transcript += "'";
     }
-    document.getElementsByTagName('span')[0].value = transcript;
+    document.getElementsByTagName('span')[0].innerHTML = transcript;
 }
 
 document.getElementsByTagName('button')[0].addEventListener(type="click", listener=Transcribe)
