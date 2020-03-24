@@ -123,10 +123,9 @@ function Transcribe(){
         if (t[i].lon) transcript += ":";
         if (t[i].pal) transcript += "'";
     }
-    alert(transcript)
+    console.log(transcript)
     document.getElementsByTagName('span')[0].innerHTML = transcript;
-    alert(document.getElementsByTagName('span')[0]);
-    alert(document.getElementsByTagName('span')[0].innerHTML);
+    console.log(document.getElementsByTagName('span'));
 }
 
 document.getElementsByTagName('button')[0].addEventListener(type="click", listener=Transcribe)
