@@ -117,15 +117,14 @@ function Transcribe(){
         }
     }
 
-    console.log (t);
-    var transcript = '';
+   /* var transcript = '';
     for (var i = 0; i < t.length; i++){ 
         transcript += t[i].s;
         if (t[i].lon) transcript += ":";
         if (t[i].pal) transcript += "'";
     }
     document.getElementsByTagName('span')[0].value = transcript;
-
+*/
 }
 
 document.getElementsByTagName('button')[0].addEventListener(type="click", listener=Transcribe)
