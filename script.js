@@ -117,7 +117,14 @@ function Transcribe(){
         }
     }
 
-    console.log (t)
+    console.log (t);
+    var transcript = '';
+    for (var i = 0; i < t.length; i++){ 
+        transcript += t[i].s;
+        if (t[i].lon) transcript += ":";
+        if (t[i].pal) transcript += "'";
+    }
+    document.getElementsByTagName('span')[0].value = transcript;
 
 }
 
